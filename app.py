@@ -50,8 +50,8 @@ if __name__ == "__main__":
     cur = conn.cursor()
 
     player_table_arr = [[p[4], p[1], p[2]] for p in player_arr]
-    # cur.executemany("INSERT INTO players (player_id, last_nm, frst_nm) VALUES (%s, %s, %s)", player_table_arr)
-    # conn.commit()
+    cur.executemany("INSERT INTO players (player_id, last_nm, frst_nm) VALUES (%s, %s, %s)", player_table_arr)
+    conn.commit()
 
     stats_table_arr = [[p[4], 2014, p[3], p[5], p[6], p[7], p[8], p[9],
         p[10], p[11], p[12], p[13], p[14], p[15], p[16], p[17], p[18], p[19],
@@ -64,6 +64,6 @@ if __name__ == "__main__":
     %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
     %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""", stats_table_arr)
     conn.commit()
-    
+
     cur.close()
     conn.close()
