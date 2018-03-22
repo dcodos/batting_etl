@@ -66,7 +66,6 @@ def parse_player_rows(player_rows):
 
 
 if __name__ == "__main__":
-
     # Set up command-line arguments
     parser = argparse.ArgumentParser(description='Load data from an HTML file and insert into a PostgreSQL database.')
     parser.add_argument('--file_url', default="https://raw.githubusercontent.com/kruser/interview-developer/master/python/leaderboard.html", dest="file_url",
