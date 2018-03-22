@@ -27,3 +27,5 @@ The parameters and their defaults are as follows:
 
 ## wOBA Analysis
 To get a list of all of the players, sorted by 2014 wOBA, run the script in `woba.sql`
+
+This query uses the wOBA weights from Fangraphs found here: https://www.fangraphs.com/guts.aspx?type=cn
