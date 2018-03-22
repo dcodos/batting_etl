@@ -3,6 +3,8 @@
 ## Install dependencies
 To install dependencies, run `pip install -r requirements.txt`
 
+**Note: This assumes Python 3**
+
 ## Table Setup
 There are two tables where data will be stored, *players* and *stats*.
 The *players* table stores player IDs and the names of players, while the *stats* table stores all of the statistics found in the HTML file. This allows for multiple years of data to be stored in *stats* without storing the player name redundantly.
