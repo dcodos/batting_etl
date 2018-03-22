@@ -3,7 +3,7 @@
 ## Install dependencies
 To install dependencies, run `pip install -r requirements.txt`
 
-**Note: This assumes Python 3**
+**Note: Python 3 is required**
 
 ## Table Setup
 There are two tables where data will be stored, *players* and *stats*.
