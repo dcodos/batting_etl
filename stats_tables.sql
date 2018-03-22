@@ -1,0 +1,42 @@
+CREATE TABLE players (
+  player_id   INT         PRIMARY KEY NOT NULL,
+  last_nm     VARCHAR(30)             NOT NULL,
+  frst_nm     VARCHAR(30)             NULL
+);
+
+CREATE TABLE stats (
+  player_id INT           NOT NULL,
+  year      INT           NOT NULL,
+  team      VARCHAR(3)    NULL,
+  pos       VARCHAR(2)    NULL,
+  games     INT           NULL,
+  ab        INT           NULL,
+  runs      INT           NULL,
+  hits      INT           NULL,
+  doubles   INT           NULL,
+  triples   INT           NULL,
+  hr        INT           NULL,
+  rbi       INT           NULL,
+  bb        INT           NULL,
+  so        INT           NULL,
+  sb        INT           NULL,
+  cs        INT           NULL,
+  avg       DECIMAL(4,3)  NULL,
+  obp       DECIMAL(4,3)  NULL,
+  slg       DECIMAL(4,3)  NULL,
+  ops       DECIMAL(4,3)  NULL,
+  ibb       INT           NULL,
+  hbp       INT           NULL,
+  sac       INT           NULL,
+  sf        INT           NULL,
+  tb        INT           NULL,
+  xbh       INT           NULL,
+  gdp       INT           NULL,
+  go        INT           NULL,
+  ao        INT           NULL,
+  go_ao     DECIMAL(5,3)  NULL,
+  np        INT           NULL,
+  pa        INT           NULL,
+  PRIMARY KEY (player_id, year),
+  FOREIGN KEY (player_id) REFERENCES players (player_id)
+);
